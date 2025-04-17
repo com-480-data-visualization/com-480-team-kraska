@@ -15,8 +15,9 @@ const MapView = () => {
   const styleFeature = (feature) => {
     const delay = feature.properties.AVG_DELAY || 0;
     return {
-      radius: 6,
-      fillColor: delay > 10 ? 'red' : delay > 5 ? 'orange' : 'green',
+      radius: delay,
+      // fillColor: delay > 10 ? 'red' : delay > 5 ? 'orange' : 'yellow',
+      fillColor: 'rgb(255,' + String((1-delay/20)*255) + ',0)', // change 20 to max(delay)
       color: 'black',
       weight: 0.5,
       opacity: 1,
@@ -27,7 +28,7 @@ const MapView = () => {
   const onEachFeature = (feature, layer) => {
     const { ORIGIN, AVG_DELAY } = feature.properties;
     layer.bindTooltip(
-      `${ORIGIN}<br/>Average Delay: ${AVG_DELAY} mins`,
+      `${ORIGIN}<br/>Average Delay: ${+AVG_DELAY.toFixed(2)} mins`,
       { permanent: false }
     );
   };
