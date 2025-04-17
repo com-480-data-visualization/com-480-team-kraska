@@ -14,10 +14,13 @@ const MapView = () => {
 
   const styleFeature = (feature) => {
     const delay = feature.properties.AVG_DELAY || 0;
+    const max_delay = feature.properties.MAX_AVG_DELAY || 0;
+    const min_delay = feature.properties.MIN_AVG_DELAY || 0;
+    const dist = max_delay - min_delay;
     return {
-      radius: delay,
+      radius: delay / dist * 15,
       // fillColor: delay > 10 ? 'red' : delay > 5 ? 'orange' : 'yellow',
-      fillColor: 'rgb(255,' + String((1-delay/20)*255) + ',0)', // change 20 to max(delay)
+      fillColor: 'rgb(255,' + String((max_delay - delay) / dist * 255) + ',0)',
       color: 'black',
       weight: 0.5,
       opacity: 1,
