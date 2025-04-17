@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/com-480-team-kraska/static/css/main.2e662a65.css",
-    "main.js": "/com-480-team-kraska/static/js/main.f1b609a6.js",
+    "main.js": "/com-480-team-kraska/static/js/main.4b0d1768.js",
     "index.html": "/com-480-team-kraska/index.html",
     "main.2e662a65.css.map": "/com-480-team-kraska/static/css/main.2e662a65.css.map",
-    "main.f1b609a6.js.map": "/com-480-team-kraska/static/js/main.f1b609a6.js.map"
+    "main.4b0d1768.js.map": "/com-480-team-kraska/static/js/main.4b0d1768.js.map"
   },
   "entrypoints": [
     "static/css/main.2e662a65.css",
-    "static/js/main.f1b609a6.js"
+    "static/js/main.4b0d1768.js"
   ]
 }
