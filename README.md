@@ -132,7 +132,76 @@ Our work is inspired by **FlightAware's Misery Map**, **New York Times' interact
 
 ## Milestone 2 (18th April, 5pm)
 
-**10% of the final grade**
+**1. Sketches**
+We developed a visualization centered around a U.S. map where each airport is represented by a color-coded dot indicating the average delay at the origin airport:
+> - Red for higher average delays
+> - Green for better on-time performance
+
+This provides an immediate overview of airport-level reliability across the country.
+
+**2. Tools and Lectures**
+**Technologies Used:**
+
+> - Leaflet.js: For the interactive U.S. map.
+
+> - D3.js: For supplementary charts showing delay causes, time-of-day patterns, and seasonal effects.
+
+> - Pandas, NumPy, GeoPandas, scikit-learn: For preprocessing, aggregation, and airport geolocation.
+
+> - GeoJSON: For representing spatial data.
+
+**Lecture Influences:**
+
+> - Maps and Graphs: Informed projection choices and color encodings.
+
+> - Data and Interactions: Guided interactive filtering design.
+
+> - Uncertainty and Multivariate Data: Informed visual representations of multifactor delay causes.
+
+**3. Work Breakdown**
+**Features Implemented So Far:**
+
+> - Interactive U.S. map showing delay severity per origin airport.
+
+> - Responsive interface with zoom and airport-level interactivity.
+
+> - Lightweight data backend using preprocessed CSVs.
+
+> - Aggregated data abstractions (delays and cancellation causes per airport).
+
+**Next Steps:**
+
+> - Add destination airport overlays on the map.
+
+> - Implement temporal filters: month, weekday, time of day.
+
+**Build:**
+
+> - Flights/hour visualization.
+
+> - Demographics of flights visualization.
+
+> - Style the website with basic HTML/CSS.
+
+> - Stretch goals:
+
+> --Enable interactive brushing on charts to filter other views.
+
+> --Support multiple selections with distinguishable color palettes to compare time ranges.
+
+**4. Prototype**
+We have a working prototype hosted at: https://com-480-data-visualization.github.io/com-480-team-kraska/.
+
+**Development Instructions:**
+
+Run npm start to debug locally.
+
+Use npm deploy to publish changes.
+
+To update the .geojson used for map generation, check the end of processing/flight_data_exploration.ipynb.
+
+Map logic is located in website/src/MapView.js.
+
 
 
 ## Milestone 3 (30th May, 5pm)
