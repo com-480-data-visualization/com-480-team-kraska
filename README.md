@@ -183,24 +183,20 @@ This provides an immediate overview of airport-level reliability across the coun
 
 > - Style the website with basic HTML/CSS.
 
-> - Stretch goals:
-
-> --Enable interactive brushing on charts to filter other views.
-
-> --Support multiple selections with distinguishable color palettes to compare time ranges.
+> - Stretch goals: Enable interactive brushing on charts to filter other views, Support multiple selections with distinguishable color palettes to compare time ranges.
 
 **4. Prototype**
 We have a working prototype hosted at: https://com-480-data-visualization.github.io/com-480-team-kraska/.
 
 **Development Instructions:**
 
-Run npm start to debug locally.
+> - Run npm start to debug locally.
 
-Use npm deploy to publish changes.
+> - Use npm deploy to publish changes.
 
-To update the .geojson used for map generation, check the end of processing/flight_data_exploration.ipynb.
+> - To update the .geojson used for map generation, check the end of processing/flight_data_exploration.ipynb.
 
-Map logic is located in website/src/MapView.js.
+> - Map logic is located in website/src/MapView.js.
 
 
 
