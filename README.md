@@ -204,6 +204,9 @@ We have a working prototype hosted at: https://com-480-data-visualization.github
 ## Milestone 3
 (30th May, 5pm)
 
+**Screencast: https://drive.google.com/file/d/1YFtQCGfewm6rL_OiIaplZ6HWOnbkdXg1/view?usp=sharing**
+
+
 **Path to final result and technical setup/difficulties**
 
 > - Raw data acquisition: [US DoT statistics](https://www.transtats.bts.gov/)
