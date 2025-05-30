@@ -70,8 +70,8 @@ const MapView = () => {
       {/* Filter Control */}
       <div style={{
         position: 'absolute',
-        top: '20px',
-        left: '20px',
+        top: '15px',
+        left: '55px',
         zIndex: 1000,
         background: 'white',
         padding: '15px',
