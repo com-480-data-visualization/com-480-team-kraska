@@ -130,7 +130,8 @@ Our work is inspired by **FlightAware's Misery Map**, **New York Times' interact
 > - **[3]**  Aravinda, Jatavallabha, Jacob, Gerlach and Aadithya, Naresh, 2024. "Deciphering Air Travel Disruptions: A Machine Learning Approach", arXiv, https://arxiv.org/abs/2408.02802
 
 
-## Milestone 2 (18th April, 5pm)
+## Milestone 2
+(18th April, 5pm)
 
 **1. Sketches**
 We developed a visualization centered around a U.S. map where each airport is represented by a color-coded dot indicating the average delay at the origin airport:
@@ -200,9 +201,22 @@ We have a working prototype hosted at: https://com-480-data-visualization.github
 
 
 
-## Milestone 3 (30th May, 5pm)
+## Milestone 3
+(30th May, 5pm)
 
-**80% of the final grade**
+**Path to final result and technical setup/difficulties**
+
+> - Raw data acquisition: [US DoT statistics](https://www.transtats.bts.gov/)
+
+> - Raw flight data preprocessing and aggregation: Pandas, NumPy, GeoPandas, scikit-learn
+
+> - Interactive U.S. map: Leaflet.js
+
+> - Airport getlocation mapping: TopoJSON / GeoJSON
+
+> - Delay filter to live update user selection: Leaflet.js
+
+> - Website and data backend deployment: GitHub Pages, https://com-480-data-visualization.github.io/com-480-team-kraska/
 
 
 ## Late policy
