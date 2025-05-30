@@ -49,22 +49,22 @@ axes[0].grid(True, axis='y', linestyle='--', alpha=0.6)
 
 # 2. Arrival Airports
 arrvial_delay.plot(kind='bar', ax=axes[1], color='orange')
-axes[0].set_title('Top 10 Most Delayed Arrival Airports')
-axes[0].set_ylabel('Avg Departure Delay (min)')
-axes[0].grid(True, axis='y', linestyle='--', alpha=0.6)
+axes[1].set_title('Top 10 Most Delayed Arrival Airports')
+axes[1].set_ylabel('Avg Departure Delay (min)')
+axes[1].grid(True, axis='y', linestyle='--', alpha=0.6)
 
 # 3. Day of Week
 dow_delay.plot(kind='bar', ax=axes[2], color='darkblue')
-axes[1].set_title('Departure Delay by Day of Week')
-axes[1].set_ylabel('Avg Delay (min)')
-axes[1].grid(True, axis='y', linestyle='--', alpha=0.6)
+axes[2].set_title('Departure Delay by Day of Week')
+axes[2].set_ylabel('Avg Delay (min)')
+axes[2].grid(True, axis='y', linestyle='--', alpha=0.6)
 
 # 4. Hour of Day
 hour_delay.plot(kind='bar', ax=axes[3], color='darkgreen')
-axes[2].set_title('Departure Delay by Hour of Day')
-axes[2].set_xlabel('Hour (0–23)')
-axes[2].set_ylabel('Avg Delay (min)')
-axes[2].grid(True, axis='y', linestyle='--', alpha=0.6)
+axes[3].set_title('Departure Delay by Hour of Day')
+axes[3].set_xlabel('Hour (0–23)')
+axes[3].set_ylabel('Avg Delay (min)')
+axes[3].grid(True, axis='y', linestyle='--', alpha=0.6)
 
 plt.tight_layout()
 plt.show()
